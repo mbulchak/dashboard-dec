@@ -16,6 +16,4 @@
   "requirePragma": false,
   "trailingComma": "es5",
   "embeddedLanguageFormatting": "auto",
-  "experimentalTernaries": false,
-  "parser": "typescript"
-}
+  "experimentalTernaries": false}
