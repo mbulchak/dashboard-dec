@@ -1,3 +1,9 @@
+import { Navigation } from "../../components/Navigation"
+
 export const Dashboard = () => {
-  return <p>Dash</p>
+  return (
+    <>
+      <Navigation />
+    </>
+  )
 }
