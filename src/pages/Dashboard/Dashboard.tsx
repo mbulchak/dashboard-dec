@@ -1,3 +1,4 @@
+import {MarketIntelligence} from '../../components/MarketIntelligence';
 import {Navigation} from '../../components/Navigation';
 import {PortfolioGoals} from '../../components/PortfolioGoals';
 import {QuickActions} from '../../components/QuickActions';
@@ -11,12 +12,13 @@ export const Dashboard = () => {
       <div className='flex flex-col xl:flex-row gap-[17px] mx-[40px] xl:mx-[100px]'>
         <WorkQueue />
 
-        <div className='flex gap-[17px]'>
+        <div className='flex flex-col lg:flex-row gap-[17px]'>
           <PortfolioGoals />
 
-          <div className='flex flex-col gap-[14px]'>
+          <div className='flex flex-row sm:flex-row xl:flex-col gap-[14px]'>
             <QuickActions />
-            <QuickActions />
+            
+            <MarketIntelligence />
           </div>
         </div>
       </div>

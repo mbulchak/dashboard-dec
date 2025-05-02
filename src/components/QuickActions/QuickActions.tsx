@@ -8,11 +8,11 @@ export const QuickActions = () => {
       <div className='flex flex-col gap-[5px]'>
         <QuickButton width='w-[240px]' height='h-[40px]' buttonName='New Subsissions' />
 
-        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='New Subsissions' />
+        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='Quote Builder' />
 
-        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='New Subsissions' />
+        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='Risks Models' />
 
-        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='New Subsissions' />
+        <QuickButton width='w-[240px]' height='h-[40px]' buttonName='Documents Upload' />
       </div>
     </section>
   );
