@@ -4,8 +4,8 @@ import greentarget from './../../assets/images/targets/green-target.png';
 export const PortfolioGoals = () => {
   return (
     <>
-      <div className='w-[285px] bg-[#1e2233] text-white p-4 rounded-[20px] shadow-lg'>
-        <h2 className='text-[20px] mb-[29px]'>Portfolio Goals</h2>
+      <div className='w-[285px] h-[550px] bg-[#1e2233] text-white px-[23px] pt-[12px] rounded-[20px]'>
+        <h3 className='text-[20px] mb-[29px]'>Portfolio Goals</h3>
 
         {/* Portfolio Loss Ratios Target */}
         <div className='mb-[58px] w-[238px]'>
@@ -86,7 +86,7 @@ export const PortfolioGoals = () => {
 
             <p className='absolute -right-[35px] top-1 text-[12px] font-semibold'>$42M</p>
 
-            <p className='absolute left-[75px] top-7 text-xs text-slate-400'>68%</p>
+            <p className='absolute left-[55px] top-7 text-xs text-slate-400'>68%</p>
           </div>
         </div>
       </div>

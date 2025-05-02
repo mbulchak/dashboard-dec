@@ -68,7 +68,7 @@ export const WorkQueue = () => {
 
   return (
     <>
-      <div className='max-w-[1035px]  text-[#E5E7EB]   px-[18px] lg:px-[23px] pt-[25px] pb-[36px] bg-[#1e2233] border border-[#313B54] rounded-2xl'>
+      <div className='max-w-[1035px] text-[#E5E7EB]   px-[18px] lg:px-[23px] pt-[25px] pb-[36px] bg-[#1e2233] border border-[#313B54] rounded-2xl'>
         <h3 className='text-[20px] font-normal mb-[20px]'>Work Queue</h3>
 
         <div className='flex justify-start space-x-4 mb-[25px]'>
