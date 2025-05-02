@@ -26,7 +26,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <nav className='text-white px-[50px] xl:px-[100px] flex gap-[10px]'>
+      <nav className='text-white px-[40px] xl:px-[100px] flex gap-[10px] mb-[21px]'>
         <ul className='flex gap-[9px]   overflow-x-hidden '>
           {dashboardNavigation.map((nav) => {
             return (
