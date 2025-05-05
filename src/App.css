@@ -5,4 +5,5 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background-color: #121622;
+  overscroll-behavior: none;
 }

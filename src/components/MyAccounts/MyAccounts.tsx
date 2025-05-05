@@ -79,7 +79,7 @@ const myAccountsHeader = [
 ];
 export const MyAccounts = () => {
   return (
-    <div className='max-w-[1600px] bg-[#1e2233] text-white px-[22px] pt-[12px] pb-[16px] rounded-[20px] mx-[40px] xl:mx-[100px]'>
+    <div className='max-w-[1600px] bg-[#1e2233] text-white px-[22px] pt-[12px] pb-[16px] rounded-[20px] mx-[40px] xl:mx-[100px] mb-[200px]'>
       <div className='flex flex-col gap-y-[15px] lg:flex-row lg:items-center mb-[24px]'>
         <h3 className='text-[20px] min-w-fit mr-[28px]'>My Accounts</h3>
 
@@ -215,36 +215,36 @@ export const MyAccounts = () => {
             <div className='text-[#94A3B8] mb-2'>{accBody.type}</div>
 
             <div className='grid grid-cols-2 gap-x-4 gap-y-2 text-[13px]'>
-              <div>
+              <section>
                 <span className='text-[#94A3B8]'>Line:</span> {accBody.line}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Broker:</span> {accBody.broker}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Renewal:</span> {accBody.renewalDate}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Premium:</span> ${accBody.premium}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Rated:</span> ${accBody.ratedPremium}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Loss Ratio:</span> {accBody.lossRatio}%
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Appetite:</span> {accBody.appetite}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Status:</span> {accBody.status}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Triage:</span> {accBody.triage}
-              </div>
-              <div>
+              </section>
+              <section>
                 <span className='text-[#94A3B8]'>Winnability:</span> {accBody.winnability}
-              </div>
+              </section>
             </div>
           </div>
         ))}
