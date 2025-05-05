@@ -5,6 +5,7 @@ import App from './App.tsx';
 import {BrowserRouter, Route, Routes} from 'react-router';
 import {Dashboard} from './pages/Dashboard/Dashboard.tsx';
 import {Accounts} from './pages/Accounts/Accounts.tsx';
+import {NotFound} from './pages/NotFound/NotFound.tsx';
 
 const Root = () => {
   return (
@@ -15,7 +16,7 @@ const Root = () => {
 
           <Route path='accounts' element={<Accounts />} />
 
-          <Route path='*' element={<p>Not found page</p>} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
