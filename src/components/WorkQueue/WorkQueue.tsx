@@ -68,17 +68,17 @@ export const WorkQueue = () => {
 
   return (
     <>
-      <div className='max-w-[1035px] text-[#E5E7EB]   px-[18px] lg:px-[23px] pt-[25px] pb-[36px] bg-[#1e2233] border border-[#313B54] rounded-2xl'>
+      <div className='max-w-[1035px] text-[#E5E7EB] px-[18px] lg:px-[23px] pt-[25px] pb-[36px] bg-[#1e2233] border border-[#313B54] rounded-2xl'>
         <h3 className='text-[20px] font-normal mb-[20px]'>Work Queue</h3>
 
-        <div className='flex justify-start space-x-4 mb-[25px]'>
+        <div className='flex flex-col sm:flex-row gap-y-[5px] justify-start space-x-4 mb-[25px]'>
           <button className='px-[18px] py-[6px]  bg-[#3B82F6] text-white text-sm sm:text-[16px] rounded-full mr-[8px] font-medium cursor-pointer'>
             Assigned to me (12)
           </button>
           <button className='px-[18px] py-[6px] bg-[#0C0F17] text-[#C5CAD3] text-sm sm:text-[16px] mr-[8px] rounded-full font-medium cursor-pointer'>
             Pending Review (8)
           </button>
-          <button className='px-[18px] py-[6px] bg-[#0C0F17] text-[#C5CAD3] text-sm sm:text-[16px] rounded-full font-medium cursor-pointer'>
+          <button className='px-[18px] py-[6px] bg-[#0C0F17] text-[#C5CAD3] text-sm sm:text-[16px] mr-[8px] rounded-full font-medium cursor-pointer'>
             Referrals (3)
           </button>
         </div>
@@ -86,11 +86,11 @@ export const WorkQueue = () => {
         <div className='hidden sm:block'>
           <table className='w-full '>
             <thead>
-              <tr className='bg-[#252a3d] text-[#E5E7EB] '>
+              <tr className='bg-[#252a3d] text-[#94A3B8] '>
                 {workQueueTableHeader.map((header, index) => (
                   <th
                     key={header}
-                    className={`h-[32px] text-left font-normal py-[4px] ${
+                    className={`h-[32px] text-left font-normal text-[12px] py-[4px] ${
                       index === 0 ? ' ps-[20px]' : ''
                     }`}
                   >

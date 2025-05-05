@@ -23,7 +23,7 @@ function App() {
 
           <div>
             <input
-              className='border-none bg-[#1E2233] h-[36px] w-[160px] lg:w-[360px] rounded-[22px] text-[12px] ps-[10px] mr-[6px]'
+              className='border-none bg-[#1E2233] h-[36px] w-[160px] lg:w-[360px] rounded-[22px] text-[12px] ps-[10px] mr-[6px] focus:outline-none'
               type='text'
               placeholder='Search'
             />
