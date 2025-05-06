@@ -7,6 +7,7 @@ import submission from './../../assets/images/navigation/business-and-trade.png'
 import goals from './../../assets/images/navigation/mission.png';
 import key from './../../assets/images/navigation/key.png';
 import { MaritimeLogisticsCorp } from '../../components/MaritimeLogisticsCorp';
+import { PerformanceMetrics } from '../../components/PerformanceMetrics';
 
 const accountsNavigation = [
   {id: 1, name: 'Dashboard', img: home},
@@ -28,6 +29,8 @@ export const Accounts = () => {
         </div>
 
         <MaritimeLogisticsCorp />
+
+        <PerformanceMetrics />
       </div>
     </>
   );
