@@ -8,6 +8,7 @@ import goals from './../../assets/images/navigation/mission.png';
 import key from './../../assets/images/navigation/key.png';
 import { MaritimeLogisticsCorp } from '../../components/MaritimeLogisticsCorp';
 import { PerformanceMetrics } from '../../components/PerformanceMetrics';
+import { Policies } from '../../components/Policies';
 
 const accountsNavigation = [
   {id: 1, name: 'Dashboard', img: home},
@@ -31,6 +32,8 @@ export const Accounts = () => {
         <MaritimeLogisticsCorp />
 
         <PerformanceMetrics />
+
+        <Policies />
       </div>
     </>
   );

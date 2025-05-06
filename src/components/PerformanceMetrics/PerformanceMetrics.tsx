@@ -4,10 +4,10 @@ import {PerformanceMetricBox} from '../PerformanceMetricBox';
 export const PerformanceMetrics = () => {
   return (
     <>
-      <div className='text-[#E5E7EB]'>
+      <div className='text-[#E5E7EB] mb-[57px]'>
         <h3 className='text-[22px] mb-[10px]'>Performance Metrics</h3>
 
-        <div className='grid grid-cols-[282px] md:grid-cols-[282px_282px] lg:grid-cols-[282px_282px_282px] 2xl:grid-cols-[282px_282px_282px_352px] grid-rows-[179px] gap-[10px] justify-center 2xl:justify-start'>
+        <div className='grid grid-cols-[282px] md:grid-cols-[282px_282px] lg:grid-cols-[282px_282px_282px] 2xl:grid-cols-[282px_282px_282px_352px] grid-rows-[179px] gap-[10px]'>
           <PerformanceMetricBox
             metricsSubHeader='Winnability'
             metricsHeader='Very Strong'
