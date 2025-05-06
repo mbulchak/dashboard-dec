@@ -23,7 +23,7 @@ export const Accounts = () => {
       <Navigation pageNavigation={accountsNavigation} />
 
       <div className='mx-[40px] xl:mx-[100px] text-[#E5E7EB]'>
-        <div className='text-[#E5E7EB]'>
+        <div className='text-[#E5E7EB] mb-[20px] 2xl:mb-[0] cursor-pointer'>
           Dashboard // Accounts // <span className='text-[#346fd2]'>Maritime Logistics Corp</span>
         </div>
 
