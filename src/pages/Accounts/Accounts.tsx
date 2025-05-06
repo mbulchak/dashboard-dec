@@ -9,6 +9,8 @@ import key from './../../assets/images/navigation/key.png';
 import { MaritimeLogisticsCorp } from '../../components/MaritimeLogisticsCorp';
 import { PerformanceMetrics } from '../../components/PerformanceMetrics';
 import { Policies } from '../../components/Policies';
+import { AccountStatus } from '../../components/AccountStatus';
+import { ComplianceDocumentation } from '../../components/ComplianceDocumentation';
 
 const accountsNavigation = [
   {id: 1, name: 'Dashboard', img: home},
@@ -34,6 +36,12 @@ export const Accounts = () => {
         <PerformanceMetrics />
 
         <Policies />
+
+        <div className='flex flex-col 2xl:flex-row gap-[10px] mb-[50px]'>
+          <AccountStatus />
+
+          <ComplianceDocumentation />
+        </div>
       </div>
     </>
   );
