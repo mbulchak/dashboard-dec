@@ -144,13 +144,18 @@ export const AccountDetails = () => {
 
             {recordsAi.map((record, index) => {
               return (
-                <section key={index} className='flex flex-col lg:flex-row gap-y-[10px] gap-x-[90px] lg:items-center'>
+                <section
+                  key={index}
+                  className='flex flex-col lg:flex-row gap-y-[10px] gap-x-[90px] lg:items-center'
+                >
                   <div>
                     <p className='text-[14px]'>{record.title}</p>
                     <p className='text-[#8A8B98] text-[14px]'>{record.subtitle}</p>
                   </div>
 
-                  <button className='cursor-pointer hover:bg-[#1e2233] hover:text-[#3BB979] py-[13px] px-[51px] text-[#1D2125] bg-[#3BB979] rounded-full '>Apply</button>
+                  <button className='cursor-pointer hover:bg-[#1e2233] hover:text-[#3BB979] py-[13px] px-[51px] text-[#1D2125] bg-[#3BB979] rounded-full '>
+                    Apply
+                  </button>
                 </section>
               );
             })}

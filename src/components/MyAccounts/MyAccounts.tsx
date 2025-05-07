@@ -1,3 +1,4 @@
+import { Search } from '../Search';
 import knowMore from './../../assets/images/know-more.png';
 
 const myAccountsBody = [
@@ -83,11 +84,7 @@ export const MyAccounts = () => {
       <div className='flex flex-col gap-y-[15px] lg:flex-row lg:items-center mb-[24px]'>
         <h3 className='text-[20px] min-w-fit mr-[28px]'>My Accounts</h3>
 
-        <input
-          type='text'
-          placeholder='Search'
-          className='bg-[#232838] text-[#596275] p-2 rounded-full h-[28px] w-[250px] mr-[15px] focus:outline-none'
-        />
+        <Search />
 
         <div className='flex gap-[9px]'>
           <button className='bg-[#1e2233] h-[27px] w-[99px] border border-[#3B82F6] text-[#3B82F6] rounded-full cursor-pointer'>

@@ -6,12 +6,13 @@ import brokers from './../../assets/images/navigation/user.png';
 import submission from './../../assets/images/navigation/business-and-trade.png';
 import goals from './../../assets/images/navigation/mission.png';
 import key from './../../assets/images/navigation/key.png';
-import { MaritimeLogisticsCorp } from '../../components/MaritimeLogisticsCorp';
-import { PerformanceMetrics } from '../../components/PerformanceMetrics';
-import { Policies } from '../../components/Policies';
-import { AccountStatus } from '../../components/AccountStatus';
-import { ComplianceDocumentation } from '../../components/ComplianceDocumentation';
-import { AccountDetails } from '../../components/AccountDetails';
+import {MaritimeLogisticsCorp} from '../../components/MaritimeLogisticsCorp';
+import {PerformanceMetrics} from '../../components/PerformanceMetrics';
+import {Policies} from '../../components/Policies';
+import {AccountStatus} from '../../components/AccountStatus';
+import {ComplianceDocumentation} from '../../components/ComplianceDocumentation';
+import {AccountDetails} from '../../components/AccountDetails';
+import { Commutication } from '../../components/Commutication';
 
 const accountsNavigation = [
   {id: 1, name: 'Dashboard', img: home},
@@ -45,6 +46,8 @@ export const Accounts = () => {
         </div>
 
         <AccountDetails />
+
+        <Commutication />
       </div>
     </>
   );
