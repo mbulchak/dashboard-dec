@@ -114,7 +114,7 @@ const totals = {
 
 export const PoliciesTable = () => {
   return (
-    <section>
+    <section className='mb-[30px]'>
       <h3 className='text-[24px] mb-[20px]'>Policies</h3>
 
       <div className='bg-[#1e2233] max-w-[1400px] ps-[25px] pe-[20px] pt-[20px] pb-[45px] rounded-2xl '>
