@@ -281,6 +281,7 @@ export const PoliciesTable = () => {
                   <dt className='text-[#6F778A]'>Eff. Date</dt>
                   <dd>{polBody.eff_date}</dd>
                 </div>
+
                 <div className='flex justify-between'>
                   <dt className='text-[#6F778A]'>Exp. Date</dt>
                   <dd>{polBody.exp_date}</dd>
