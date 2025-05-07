@@ -1,15 +1,25 @@
-# React + TypeScript + Vite
+# Dashboard&Account app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides you information about these pages: Dashboard, Accounts, with different data tables, and small effects.
 
 - [Demo](https://mbulchak.github.io/dashboard-dec/)
 
-## Don't forget It, if you are doing a deploy
+## Features and Instruments
 
-If you are doing deploy, don't forget to create a personal token and in .github/workflows/deploy.yml change
+- React, React Router, TS, Vite
+- Tailwind
+- Adaptive design, Grid, Flex
 
+## Setup
 
+- clone the repo
+- install dependencies
 ```js
-env:
-          GITHUB_TOKEN: ${{ secrets.YOUR_SECRET_TITLE }}
+npm install
 ```
+- open the terminal
+- run the command
+```js
+npm run dev
+```
+- click the link in the terminal
