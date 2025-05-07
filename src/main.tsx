@@ -9,7 +9,8 @@ import {NotFound} from './pages/NotFound/NotFound.tsx';
 
 const Root = () => {
   return (
-    <BrowserRouter basename='dashboard-dec'>
+    // <BrowserRouter basename='dashboard-dec'>
+    <BrowserRouter basename={import.meta.env.VITE_ROUTER_BASE}>
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='dashboard' element={<Dashboard />} />
