@@ -1,4 +1,4 @@
-import { Search } from '../Search';
+import {Search} from '../Search';
 import knowMore from './../../assets/images/know-more.png';
 
 const myAccountsBody = [
