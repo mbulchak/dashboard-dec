@@ -2,7 +2,7 @@
 
 This project provides you information about these pages: Dashboard, Accounts, with different data tables, and small effects.
 
-- [Demo](https://mbulchak.github.io/dashboard-dec/)
+- [Demo on AWS Hoisting](https://master.d2lizj4jpu46fk.amplifyapp.com/)
 
 ## Features and Instruments
 
