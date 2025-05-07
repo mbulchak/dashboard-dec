@@ -79,7 +79,7 @@ const myAccountsHeader = [
 ];
 export const MyAccounts = () => {
   return (
-    <div className='max-w-[1600px] bg-[#1e2233] text-white px-[22px] pt-[12px] pb-[16px] rounded-[20px] mx-[40px] xl:mx-[100px] mb-[200px]'>
+    <div className='max-w-[1400px] bg-[#1e2233] text-white px-[22px] pt-[12px] pb-[16px] rounded-[20px] mx-[40px] xl:mx-[100px] mb-[200px]'>
       <div className='flex flex-col gap-y-[15px] lg:flex-row lg:items-center mb-[24px]'>
         <h3 className='text-[20px] min-w-fit mr-[28px]'>My Accounts</h3>
 
@@ -108,14 +108,14 @@ export const MyAccounts = () => {
         </div>
       </div>
 
-      <table className='hidden lg:block w-full'>
+      <table className='hidden lg:block w-full table-fixed'>
         <thead>
           <tr className='bg-[#252a3d] text-[#94A3B8]'>
             {myAccountsHeader.map((accHeader, index) => {
               return (
                 <td
                   key={accHeader}
-                  className={`min-w-fit h-[32px] text-left text-[12px] pe-[4px] font-normal ${
+                  className={`min-w-fit xl:whitespace-nowrap h-[32px] text-left text-[12px] pe-[4px] 2xl:pe-[14px] font-normal ${
                     index === 0 ? ' ps-[26px]' : ''
                   }`}
                 >
@@ -133,24 +133,24 @@ export const MyAccounts = () => {
                 key={accBody.id}
                 className={`border-b border-[#313B54] h-[60px] ${index % 2 !== 0 ? 'bg-[#232838] ' : ''}`}
               >
-                <td className='ps-[26px] pe-[4px] text-[14px]'>
+                <td className='ps-[26px] pe-[4px] 2xl:pe-[14px] text-[14px]'>
                   {accBody.accountName}
                   <p className='text-[#94A3B8] pe-[4px]'>{accBody.type}</p>
                 </td>
 
-                <td className='text-[14px] pe-[4px]'>{accBody.line}</td>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>{accBody.line}</td>
 
-                <td className='text-[14px] pe-[4px]'>{accBody.broker}</td>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>{accBody.broker}</td>
 
-                <td className='text-[14px] pe-[4px]'>{accBody.renewalDate}</td>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>{accBody.renewalDate}</td>
 
-                <td className='text-[14px] text-[#3B82F6] font-semibold pe-[4px]'>
+                <td className='text-[14px] text-[#3B82F6] font-semibold pe-[4px] 2xl:pe-[14px]'>
                   ${accBody.premium}
                 </td>
 
-                <td className='text-[14px] pe-[4px]'>${accBody.ratedPremium}</td>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>${accBody.ratedPremium}</td>
 
-                <td className={`text-[14px] pe-[4px]  `}>
+                <td className={`text-[14px] pe-[4px] 2xl:pe-[14px] `}>
                   <p
                     className={`w-[52px] h-[24px] leading-[24px] text-center rounded-full  ${
                       accBody.lossRatio < 35
@@ -164,13 +164,13 @@ export const MyAccounts = () => {
                   </p>
                 </td>
 
-                <td className='text-[12px] pe-[4px]'>
+                <td className='text-[12px] pe-[4px] 2xl:pe-[14px]'>
                   <p className='h-[24px] leading-[24px] w-[83px] text-center bg-[#1e40af4d] rounded-full'>
                     {accBody.appetite.toUpperCase()}
                   </p>
                 </td>
 
-                <td className='text-[14px] pe-[4px] '>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>
                   <span
                     className={`inline-block w-[10px] h-[10px] rounded-[12px] mr-[5px] ${
                       accBody.status === 'Active' ? 'bg-[#10B981]' : 'bg-[#3B82F6]'
@@ -179,14 +179,14 @@ export const MyAccounts = () => {
                   {accBody.status}
                 </td>
 
-                <td className='text-[14px] pe-[4px]'>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>
                   <p className='w-[43px] h-[23px] leading-[23px] border border-[#3B82F6] text-center text-[#3B82F6] bg-[#1e2233] rounded-full'>
                     {accBody.triage}
                   </p>
                 </td>
 
-                <td className='text-[14px] pe-[4px] '>
-                  <p className='h-[23px] leading-[23px] border border-[#3B82F6] text-center text-[#3B82F6] bg-[#1e2233] rounded-full px-[10px] flex items-center justify-center gap-[8px]'>
+                <td className='text-[14px] pe-[4px] 2xl:pe-[14px]'>
+                  <div className='h-[23px] leading-[23px] border border-[#3B82F6] text-center text-[#3B82F6] bg-[#1e2233] rounded-full px-[10px] flex items-center justify-center gap-[8px]'>
                     <div className='flex items-center gap-[4px]'>
                       <span className='w-[10px] h-[10px] bg-[#3B82F6] rounded-full shrink-0'></span>
                       <span className='w-[10px] h-[10px] bg-[#3B82F6] rounded-full shrink-0'></span>
@@ -194,10 +194,10 @@ export const MyAccounts = () => {
                       <span className='w-[10px] h-[10px] bg-[#3B82F6] rounded-full shrink-0'></span>
                     </div>
                     <span className='shrink-0'>{accBody.winnability}</span>
-                  </p>
+                  </div>
                 </td>
 
-                <td className='text-[14px] pe-[21px]'>
+                <td className='text-[14px] pe-[21px] '>
                   <button className='cursor-pointer w-[20px] h-[20px] ml-[5px]'>
                     <img src={knowMore} alt='Details button' className='w-[20px] h-[20px]' />
                   </button>

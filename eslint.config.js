@@ -47,6 +47,7 @@ module.exports = [
       'no-var': 'error',
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
+      "react/no-invalid-html-nesting": "warn"
     },
   },
 ];

@@ -48,10 +48,10 @@ export const Policies = () => {
       <div className='flex flex-col mb-[26px]'>
         <h2 className='text-[24px] mb-[10px]'>Policies</h2>
 
-        <div className='overflow-hidden bg-[#1E2233] rounded-2xl py-[15px] ps-[25px] pe-[15px] sm:pe-[0] grid sm:grid-cols-[repeat(2,_250px)] md:grid-cols-[repeat(3,_250px)] lg:grid-cols-[repeat(4,_250px)] xl:grid-cols-[repeat(5,_250px)] gap-[15px] max-w-[1250px]'>
+        <div className='overflow-hidden bg-[#1E2233] rounded-2xl py-[15px] ps-[25px] pe-[15px] sm:pe-[0] grid sm:grid-cols-[repeat(2,_250px)] md:grid-cols-[repeat(3,_250px)] lg:grid-cols-[repeat(4,_250px)] xl:grid-cols-[repeat(5,_250px)] gap-[15px] max-w-[1250px] cursor-pointer'>
           {policies.map((policy, index) => {
             return (
-              <section key={index} className='py-[19px] px-[19px] bg-[#252A3D] rounded-2xl '>
+              <section key={index} className='py-[19px] px-[19px] bg-[#252A3D] rounded-2xl scale-100 transition delay-150 duration-300 ease-in-out hover:scale-105'>
                 <div className='flex gap-2 mb-[2px]'>
                   <img src={policy.icon} alt='policy icon' className='w-[22px] h-[22px]' />
                   <h3 className='text-normal'>{policy.title}</h3>

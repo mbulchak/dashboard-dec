@@ -11,6 +11,7 @@ import { PerformanceMetrics } from '../../components/PerformanceMetrics';
 import { Policies } from '../../components/Policies';
 import { AccountStatus } from '../../components/AccountStatus';
 import { ComplianceDocumentation } from '../../components/ComplianceDocumentation';
+import { AccountDetails } from '../../components/AccountDetails';
 
 const accountsNavigation = [
   {id: 1, name: 'Dashboard', img: home},
@@ -42,6 +43,8 @@ export const Accounts = () => {
 
           <ComplianceDocumentation />
         </div>
+
+        <AccountDetails />
       </div>
     </>
   );
