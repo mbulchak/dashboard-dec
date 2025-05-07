@@ -39,7 +39,7 @@ export const AccountDetails = () => {
 
       <div className='bg-[#1e2233] max-w-[1400px] ps-[20px] pe-[40px] pt-[30px] pb-[35px] flex flex-col gap-y-[15px] md:flex-row rounded-2xl '>
         <div className='border-r border-dashed pr-[13px] mr-[19px]'>
-          <div className='py-[17px] px-[25px] mb-[14px] bg-[#252A3D] max-w-[290px] rounded-lg'>
+          <div className='py-[17px] px-[25px] mb-[14px] bg-[#252A3D] lg:min-w-[290px] rounded-lg'>
             <section className='flex gap-[20px] items-center'>
               DESICION SUPPORT
               <span className='border border-white px-[7px] py-[5px] rounded-md'>4</span>
