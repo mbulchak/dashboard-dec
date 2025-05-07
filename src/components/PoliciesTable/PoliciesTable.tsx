@@ -298,6 +298,7 @@ export const PoliciesTable = () => {
                     {polBody.status}
                   </dd>
                 </div>
+
                 <div className='flex justify-between'>
                   <dt className='text-[#6F778A]'>Exp. Tech</dt>
                   <dd>${polBody.expiring_tech}</dd>
