@@ -106,27 +106,31 @@ export const WorkQueue = () => {
                   key={workRecord.id}
                   className={`border-b border-[#313B54] ${index % 2 !== 0 ? 'bg-[#232838] ' : ''}`}
                 >
-                  <td className='h-[60px] ps-[15px] flex items-center min-w-fit'>
-                    <AvatarButton
-                      initials={workRecord.initials}
-                      width='w-[32px]'
-                      height='h-[32px]'
-                      size='text-sm'
-                    />
+                  <td className='h-[60px] ps-[15px] pe-[10px]'>
+                    <div className='flex items-center gap-[5px]'>
+                      <AvatarButton
+                        initials={workRecord.initials}
+                        width='min-w-[32px]'
+                        height='h-[32px]'
+                        size='text-sm'
+                      />
 
-                    {workRecord.name}
+                      <p className='text-[15px]'>{workRecord.name}</p>
+                    </div>
                   </td>
 
-                  <td className='h-[60px] '>
+                  <td className='h-[60px] text-[14px] pe-[10px]'>
                     {workRecord.companyName}
                     <p className='text-[#94A3B8] text-sm'>{workRecord.area}</p>
                   </td>
 
-                  <td className='h-[60px] '>{workRecord.type}</td>
+                  <td className='h-[60px] text-[14px] pe-[10px]'>{workRecord.type}</td>
 
-                  <td className='h-[60px]  flex gap-[5px] items-center'>
+                  <td className='h-[60px] text-[14px] pe-[10px]'>
+                    <div className='flex gap-[5px] items-center'>
+
                     <span
-                      className={`inline-block w-[10px] h-[10px] rounded-[12px] ${
+                      className={`inline-block min-w-[10px] h-[10px] rounded-[12px] ${
                         workRecord.status === 'New'
                           ? 'bg-[#3B82F6]'
                           : workRecord.status === 'Pending Review'
@@ -135,9 +139,10 @@ export const WorkQueue = () => {
                       }`}
                     ></span>
                     {workRecord.status}
+                    </div>
                   </td>
 
-                  <td className='h-[60px]'>{workRecord.createdAt}</td>
+                  <td className='h-[60px] text-[14px] pe-[10px]'>{workRecord.createdAt}</td>
 
                   <td className='h-[60px] pe-[30px] text-center '>
                     <button className='cursor-pointer w-[20px] h-[20px] ml-[5px]'>
